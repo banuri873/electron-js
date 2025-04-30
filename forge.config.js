@@ -24,6 +24,21 @@ module.exports = {
       config: {},
     },
   ],
+  publishers: [
+    {
+      name: '@electron-forge/publisher-github',
+      config: {
+        repository: {
+          owner: 'banuri873',
+          name: 'electron-js'
+        },
+        draft: true,
+        prerelease: false
+      }
+    }
+  ],
+
+
   plugins: [
     {
       name: '@electron-forge/plugin-auto-unpack-natives',
