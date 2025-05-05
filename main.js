@@ -1,6 +1,11 @@
 
 const { app, BrowserWindow, ipcMain, Menu, Tray, nativeImage ,globalShortcut,Notification} = require('electron')
 
+require('update-electron-app')({
+  repo: 'banuri873/electron-js'
+})
+
+
 const path = require('path')
 const fs = require('fs')
 
